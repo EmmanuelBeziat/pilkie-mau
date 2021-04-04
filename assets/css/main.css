@@ -506,8 +506,8 @@ figure {
 	overflow: hidden;
 }
 
-.hero-picture {
-	max-width: 100%;
+.hero-picture img {
+	width: 100%;
 	vertical-align: top;
 	object-fit: cover;
 }
