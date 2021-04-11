@@ -18,6 +18,6 @@ $header_class = $show_title ? 'site-title' : 'screen-reader-text';
 	<?php endif; ?>
 
 	<?php if ($blog_info) : ?>
-		<p class="<?php echo esc_attr( $header_class ); ?>"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo esc_html( $blog_info ); ?></a></p>
+		<a class="<?php echo esc_attr( $header_class ); ?>" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo esc_html( $blog_info ); ?></a>
 	<?php endif; ?>
 </div>

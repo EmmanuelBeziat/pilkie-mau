@@ -11,15 +11,16 @@
 
 $home = (object) [
 	'picture' => get_field('hero')['main-picture'],
+	'color' => get_field('hero')['color'],
 	'title' => get_the_content(),
-	'pictures' => get_field('front-pictures')
+	'pictures' => get_field('front-pictures'),
 ]; ?>
 
 <section class="hero">
 	<div class="hero-picture">
 		<img src="<?= $home->picture['url']; ?>" alt="<?= $home->picture['url']; ?>">
 	</div>
-	<div class="hero-title">
+	<div class="hero-title hero-color-<?= $home->color ?>">
 		<?= $home->title; ?>
 	</div>
 </section>

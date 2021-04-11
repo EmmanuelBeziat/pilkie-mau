@@ -13,8 +13,20 @@ $wrapper_classes .= has_nav_menu('primary') ? ' has-menu' : '';
 ?>
 
 <header id="masthead" class="<?php echo esc_attr($wrapper_classes); ?>">
-	<div class="container">
-		<?php get_template_part('template-parts/header/site-branding'); ?>
+	<?php get_template_part('template-parts/header/site-branding'); ?>
+
+	<div class="header-navigation">
+		<div class="menu-button-container">
+			<button id="primary-mobile-menu" class="button" aria-controls="primary-menu-list" aria-expanded="false">
+				<span class="dropdown-icon open">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</span>
+			</button>
+		</div>
+
 		<?php get_template_part('template-parts/header/site-nav'); ?>
 		<?php get_template_part('template-parts/header/site-social'); ?>
 	</div>
