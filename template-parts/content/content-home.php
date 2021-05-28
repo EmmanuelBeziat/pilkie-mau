@@ -31,8 +31,8 @@ $home = (object) [
 			<?php wp_nav_menu([
 				'theme_location'  => 'categories',
 				'menu_class'      => 'menu-wrapper',
-				'container_class' => 'primary-menu-container',
-				'items_wrap'      => '<ul id="primary-menu-list" class="%2$s">%3$s</ul>',
+				'container_class' => 'category-menu-container',
+				'items_wrap'      => '<ul id="category-menu-list" class="%2$s">%3$s</ul>',
 				'fallback_cb'     => false,
 			]); ?>
 		</div>

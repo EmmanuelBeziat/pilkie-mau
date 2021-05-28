@@ -1,2 +1,2 @@
-document.addEventListener("DOMContentLoaded",()=>{console.log("init")});
+class Menu{constructor(t){this.button=document.querySelector(t.button),this.menu=document.querySelector(t.menu),this.button&&this.menu&&this.onButtonClick(this.button)}onButtonClick(t){t.addEventListener("click",t=>{t.preventDefault(),t.target.classList.toggle("opened")})}}document.addEventListener("DOMContentLoaded",()=>{new Menu({button:"#primary-mobile-menu",menu:".header-navigation"})});
 //# sourceMappingURL=main.js.map
