@@ -1,0 +1,48 @@
+{
+  "name": "pilkie",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "watch": "webpack --watch",
+    "build": "webpack",
+    "clean": "rm dist/bundle.js",
+    "build-dev": "webpack --mode development",
+    "build-prod": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmmanuelBeziat/pilkie-mau.git"
+  },
+  "keywords": [
+    "wordpress",
+    "theme"
+  ],
+  "author": {
+    "name": "Emmanuel Béziat",
+    "email": "contact@emmanuelbeziat.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EmmanuelBeziat/pilkie-mau/issues"
+  },
+  "homepage": "https://github.com/EmmanuelBeziat/pilkie-mau#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "cssnano": "^5.0.4",
+    "del": "^6.0.0",
+    "eslint": "^7.27.0",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-stylus": "^2.7.0",
+    "gulp-uglify": "^3.0.2",
+    "stylus": "^0.54.8"
+  },
+  "dependencies": {
+    "gulp-concat": "^2.6.1"
+  }
+}

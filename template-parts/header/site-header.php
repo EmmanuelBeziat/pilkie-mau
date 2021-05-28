@@ -24,6 +24,7 @@ $wrapper_classes .= has_nav_menu('primary') ? ' has-menu' : '';
 					<span></span>
 					<span></span>
 				</span>
+				<span class="screen-reader-text">Menu</span>
 			</button>
 		</div>
 

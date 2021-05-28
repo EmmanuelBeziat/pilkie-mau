@@ -1,0 +1,1 @@
+{"version":3,"file":"main.js","sources":["main.js"],"sourcesContent":["document.addEventListener('DOMContentLoaded', () => {\n\tconsole.log('init')\n})\n"],"names":["document","addEventListener","console","log"],"mappings":"AAAAA,SAASC,iBAAiB,mBAAoB,KAC7CC,QAAQC,IAAI"}

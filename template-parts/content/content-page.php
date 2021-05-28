@@ -12,7 +12,6 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
 	<?php if (!is_front_page()) : ?>
 		<header class="entry-header alignwide">
 			<?php // get_template_part('template-parts/header/entry-header'); ?>
@@ -25,25 +24,28 @@
 	<?php endif; ?>
 
 	<div class="entry-content">
-		<?php
-		the_content();
-
-		wp_link_pages(
-			array(
-				'before'   => '<nav class="page-links" aria-label="Page">',
-				'after'    => '</nav>',
-				'pagelink' => 'Page %',
-			)
-		);
-		?>
+		<div class="container">
+			<?php
+			the_content();
+			wp_link_pages(
+				array(
+					'before'   => '<nav class="page-links" aria-label="Page">',
+					'after'    => '</nav>',
+					'pagelink' => 'Page %',
+				)
+			);
+			?>
+		</div>
 	</div>
 
 	<?php if (get_edit_post_link()) : ?>
 		<footer class="entry-footer default-max-width">
-			<?php edit_post_link(
-				sprintf('Modifier %s', '<span class="screen-reader-text">' . get_the_title() . '</span>'),
-				'<span class="edit-link">', '</span>'
-			); ?>
-		</footer><!-- .entry-footer -->
+			<div class="container">
+				<?php edit_post_link(
+					sprintf('Modifier %s', '<span class="screen-reader-text">' . get_the_title() . '</span>'),
+					'<span class="edit-link">', '</span>'
+				); ?>
+			</div>
+		</footer>
 	<?php endif; ?>
-</article><!-- #post-<?php the_ID(); ?> -->
+</article>
