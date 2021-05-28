@@ -47,4 +47,5 @@ module.exports = {
 	styles: series(cleanCSS, styles),
 	scripts: series(cleanJS, scripts),
 	watch: watchTasks,
+	default: parallel(series(cleanCSS, styles), series(cleanJS, scripts))
 }
