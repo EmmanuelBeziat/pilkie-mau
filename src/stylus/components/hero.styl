@@ -1,0 +1,72 @@
+.hero
+	min-height 100vh
+	display flex
+	text-align center
+	justify-content center
+	align-items center
+	position relative
+
+.hero-picture
+	position absolute
+	top 0
+	left 0
+	right 0
+	bottom 0
+	z-index -1
+	overflow hidden
+
+	img
+		min-width 100%
+		min-height 100%
+		vertical-align top
+		object-fit cover
+
+.hero-title
+	padding 1rem 2rem
+
+	h1
+		font 400 var(--font-size-hero-title)/1 var(--font-hero), var(--font-secondary)
+		margin 0
+		position relative
+
+	h1::after
+		content ""
+		position absolute
+		top 0
+		left .25em
+		right .25em
+		bottom 0
+		z-index -1
+
+	p
+		margin 0
+		display inline-block
+		padding 0 1rem .5rem
+		font-size var(--font-size-xl)
+		line-height 1
+
+.hero-color-white
+	h1
+	p
+		color var(--color-white)
+
+.hero-color-white
+	h1
+		text-shadow 0 0 .15em rgba(0, 0, 0, .8), 0 0 5px rgba(0, 0, 0, .5)
+
+.hero-color-white
+	h1::after
+	p
+		background rgba(0, 0, 0, .92)
+
+.hero-color-black
+	h1
+	p
+		color #010101
+
+	h1
+		text-shadow 0 0 30px rgba(255, 255, 255, .5)
+
+	h1::after
+	p
+		background rgba(255, 255, 255, .92)

@@ -1,28 +1,32 @@
 :root
 	/* Font Family */
-	--font-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-	--font-secondary: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-	--font-hero: 'Signature Collection';
+	--font-primary Gotham, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif
+	--font-secondary -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif
+	--font-hero 'Signature Collection', var(--font-secondary)
 
 	/* Font Size */
-	--font-size-base: 1.25rem;
-	--font-size-xs: 1rem;
-	--font-size-sm: 1.125rem;
-	--font-size-md: 1.25rem;
-	--font-size-lg: 1.5rem;
-	--font-size-xl: 2.25rem;
-	--font-size-xxl: 4rem;
-	--font-size-xxxl: 6rem;
-	--font-size-hero-title: calc(48px + (64 - 24) * ((100vw - 320px) / (1600 - 320)));
+	--font-size-root 16px
+	--font-size-base 1.25rem
+	--font-size-xs 1rem
+	--font-size-sm 1.125rem
+	--font-size-md 1.25rem
+	--font-size-lg 1.5rem
+	--font-size-xl 2.25rem
+	--font-size-xxl 4rem
+	--font-size-xxxl 6rem
+	--font-size-hero-title calc(48px + (64 - 24) * ((100vw - 320px) / (1600 - 320)))
+
+	--line-height-root 1.45em
 
 	/* Headings */
-	--heading--font-family: var(--font-secondary);
+	--heading--font-family var(--font-secondary)
+	--heading--size var(--font-size-xxl)
 
 	/* Colors */
-	--color-white: #fff;
-	--color-dark-gray: #28303d;
-	--color-gray: #39414d;
-	--color-light-gray: #f0f0f0;
-	--color-white-50: rgba(255, 255, 255, 0.5);
-	--color-white-90: rgba(255, 255, 255, 0.9);
-	--color-primary: var(--color-dark-gray);
+	--color-white #fff
+	--color-dark-gray #28303d
+	--color-gray #39414d
+	--color-light-gray #f0f0f0
+	--color-white-50 rgba(255, 255, 255, 0.5)
+	--color-white-90 rgba(255, 255, 255, 0.9)
+	--color-primary var(--color-dark-gray)
