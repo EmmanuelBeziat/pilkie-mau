@@ -20,5 +20,12 @@ svg
 figure
 	margin 0
 
+.admin-bar
+	--viewport-height calc(100vh - var(--size-admin-bar))
+
+.home
+	.site
+		position relative
+
 .site
-	min-height 100vh
+	min-height var(--viewport-height)

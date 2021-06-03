@@ -1,5 +1,6 @@
 class Menu {
 	constructor (elements) {
+		this.container = document.querySelector(elements.container)
 		this.button = document.querySelector(elements.button)
 		this.menu = document.querySelector(elements.menu)
 
@@ -12,6 +13,7 @@ class Menu {
 		button.addEventListener('click', event => {
 			event.preventDefault()
 			event.target.classList.toggle('opened')
+			this.container.classList.toggle('menu-mobile-opened')
 		})
 	}
 }
@@ -19,6 +21,7 @@ class Menu {
 document.addEventListener('DOMContentLoaded', () => {
 	new Menu({
 		button: '#primary-mobile-menu',
-		menu: '.header-navigation'
+		menu: '.header-navigation',
+		container: 'body'
 	})
 })

@@ -19,19 +19,18 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 
 		<?php if (has_nav_menu('footer')) : ?>
-			<nav aria-label="Menu du Pied de page" class="footer-navigation">
-				<div class="container">
-					<ul class="footer-navigation-wrapper">
+			<div class="container">
+				<nav aria-label="Menu du Pied de page" class="footer-navigation">
 						<?php wp_nav_menu([
 								'theme_location' => 'footer',
-								'items_wrap'     => '%3$s',
-								'container'      => false,
-								'depth'          => 1,
-								'fallback_cb'    => false,
+								'items_wrap' => '%3$s',
+								'container' => false,
+								'depth' => 1,
+								'fallback_cb' => false,
+								'walker' => new MainWalker()
 						]); ?>
-					</ul>
-				</div>
-			</nav>
+				</nav>
+			</div>
 		<?php endif; ?>
 
 		<div class="site-info">

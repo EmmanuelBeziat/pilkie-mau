@@ -75,6 +75,11 @@ require get_template_directory() . '/inc/custom-post-types.php';
 require get_template_directory() . '/inc/images-sizes.php';
 
 /**
+ * Walkers
+ */
+require get_template_directory() . '/inc/walkers.php';
+
+/**
  * Register navigation menus
  */
 function pilkie_menus () {

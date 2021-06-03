@@ -14,9 +14,11 @@
 		<?php wp_nav_menu([
 			'theme_location' => 'primary',
 			'menu_class' => 'menu-wrapper',
+			'container' => false,
 			'container_class' => 'primary-menu-container',
-			'items_wrap' => '<ul id="primary-menu-list" class="%2$s">%3$s</ul>',
+			'items_wrap' => '%3$s',
 			'fallback_cb' => false,
+			'walker' => new MainWalker()
 		]); ?>
 	</nav>
 <?php endif; ?>

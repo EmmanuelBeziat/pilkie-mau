@@ -1,7 +1,15 @@
+.home
+	.site-footer
+		position absolute
+		left 0
+		right 0
+		bottom 0
+
 .site-footer
 	font-size var(--font-size-xs)
 	text-align center
-	padding 2rem
+	padding 2rem 1rem 1rem
+	background linear-gradient(to top, var(--color-dark-gray) 20%, transparent)
 
 	a
 		text-decoration none
@@ -11,16 +19,11 @@
 
 .footer-navigation
 	margin-bottom 1rem
-
-.footer-navigation-wrapper
 	display flex
 	justify-content center
 	gap .725em
-	margin 0
-	padding 0
-	list-style none
 
-	li + li::before
+	& > a + a::before
 		content " • "
 		margin-right .725em
 		display inline-block
